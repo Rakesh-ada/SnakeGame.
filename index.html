@@ -10,9 +10,10 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      background-color: black;
     }
     
-    #game-container {
+    #game-board-container {
       text-align: center;
     }
 
@@ -23,6 +24,7 @@
       display: grid;
       grid-template-columns: repeat(20, 1fr);
       grid-template-rows: repeat(20, 1fr);
+      margin: auto;
     }
     
     .snake {
@@ -89,13 +91,13 @@
     }
   </style>
 </head>
-<body bgcolor="black">
+<body>
   
 <h1 class="neon-rainbow"> Snake 🎮 Game </h1>
 
 <div id="score">Score: 0</div>
 <div id="high-score">High Score: 0</div>
-<div id="game-container">
+<div id="game-board-container">
   <div id="game-board"></div>
 </div>
 
