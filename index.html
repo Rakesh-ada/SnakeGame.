@@ -4,6 +4,18 @@
   <link rel="icon" type="image/jpg" href="Snske.jpg">
   
   <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    #game-container {
+      text-align: center;
+    }
+
     #game-board {
       width: 1000px;
       height: 1000px;
@@ -11,7 +23,6 @@
       display: grid;
       grid-template-columns: repeat(20, 1fr);
       grid-template-rows: repeat(20, 1fr);
-      
     }
     
     .snake {
@@ -37,51 +48,45 @@
     }
     
     .container {
- display: flex;
-  align-items: center;
-  justify-content: center;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px; /* Adjust margin-top as needed */
+    }
     
     /* Select the element with the class "neon-button" */
-#start-button {
-  /* Set the background color */
-  background-color: orange;
-  /* Set the font color */
-  color: cyan;
-  /* Add padding around the text */
-  padding:10px;
-  /* Add a border radius to make it rounded */
-  border-radius: 5px;
-  /* Add a box shadow to create a glow effect */
-  box-shadow: 0 0 10px orange;
-  height: 50px;
-  width: 200px;
-  font-size: 26px;
-  
- 
-}
+    #start-button {
+      /* Set the background color */
+      background-color: orange;
+      /* Set the font color */
+      color: cyan;
+      /* Add padding around the text */
+      padding:10px;
+      /* Add a border radius to make it rounded */
+      border-radius: 5px;
+      /* Add a box shadow to create a glow effect */
+      box-shadow: 0 0 10px orange;
+      height: 50px;
+      width: 200px;
+      font-size: 26px;
+    }
 
-/* Apply hover styles to the element with the class "neon-button" when hovered */
-#start-button:hover {
-  /* Adjust the background color */
-  background-color: #ff8000;
-  /* Adjust the box shadow */
-  box-shadow: 0 0 20px #ff8000;
-}
+    /* Apply hover styles to the element with the class "neon-button" when hovered */
+    #start-button:hover {
+      /* Adjust the background color */
+      background-color: #ff8000;
+      /* Adjust the box shadow */
+      box-shadow: 0 0 20px #ff8000;
+    }
 
-    
-   .neon-rainbow {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  color: #00ff00; /* Neon green color */
-  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000; /* Black shades */
-  animation: neon-glow 1.5s ease-in-out infinite alternate;
-}
-
-
-
-
+    .neon-rainbow {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      color: #00ff00; /* Neon green color */
+      text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000; /* Black shades */
+      animation: neon-glow 1.5s ease-in-out infinite alternate;
+    }
   </style>
 </head>
 <body bgcolor="black">
@@ -90,8 +95,9 @@
 
 <div id="score">Score: 0</div>
 <div id="high-score">High Score: 0</div>
-<div id="game-board"></div>
-
+<div id="game-container">
+  <div id="game-board"></div>
+</div>
 
 <br>
 <p align="right" color="red">Rakesh</p>
